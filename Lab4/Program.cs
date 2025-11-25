@@ -131,10 +131,10 @@
             HashSet<ComplexNumber> set = new()
             {
                 new ComplexNumber(6,7),   // z1
-                new ComplexNumber(3,2),   // z2
-                new ComplexNumber(8,4),   // z3 
-                new ComplexNumber(3,-2),  // z4
-                new ComplexNumber(-5,8)   // z5
+                new ComplexNumber(1,2),   // z2
+                new ComplexNumber(6,7),   // z3
+                new ComplexNumber(1,-2),  // z4
+                new ComplexNumber(-5,9)   // z5
             };
 
             Console.WriteLine("4a) zawartość:");

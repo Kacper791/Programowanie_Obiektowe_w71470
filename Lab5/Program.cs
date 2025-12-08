@@ -22,9 +22,9 @@ public class Program
         // Task12_FilterIrisCsv();
     }
 
-    // ============================================================
+    // 
     // ZADANIE 2 — Wczytaj od użytkownika kilka linii i zapisz do pliku
-    // ============================================================
+    // 
     static void Task2_SaveUserInput()
     {
         List<string> lines = new();
@@ -42,9 +42,9 @@ public class Program
         Console.WriteLine("Zapisano dane do pliku user_input.txt");
     }
 
-    // ============================================================
+    // 
     // ZADANIE 3 — Odczytaj i wypisz dane z pliku
-    // ============================================================
+    // 
     static void Task3_ReadUserInput()
     {
         if (!File.Exists("user_input.txt"))
@@ -57,9 +57,9 @@ public class Program
             Console.WriteLine(line);
     }
 
-    // ============================================================
+    // 
     // ZADANIE 4 — Dopisywanie nowych danych do tego samego pliku
-    // ============================================================
+    // 
     static void Task4_AppendUserInput()
     {
         Console.WriteLine("Wprowadzaj tekst (pusta linia kończy dopisywanie):");
@@ -78,9 +78,9 @@ public class Program
         Console.WriteLine("Dane dopisane do pliku user_input.txt.");
     }
 
-    // ============================================================
+    // 
     // ZADANIE 5 — Klasa Student
-    // ============================================================
+    // 
     public class Student
     {
         public string Imie { get; set; }
@@ -88,9 +88,9 @@ public class Program
         public List<int> Oceny { get; set; }
     }
 
-    // ============================================================
+    // 
     // ZADANIE 6 — Serializacja JSON
-    // ============================================================
+    // 
     static void Task6_JsonSerializeStudents()
     {
         List<Student> students = new()
@@ -106,9 +106,9 @@ public class Program
         Console.WriteLine("Zapisano dane studentów do JSON (students.json).");
     }
 
-    // ============================================================
+    // 
     // ZADANIE 7 — Deserializacja JSON
-    // ============================================================
+    // 
     static void Task7_JsonDeserializeStudents()
     {
         if (!File.Exists("students.json"))
@@ -124,9 +124,9 @@ public class Program
             Console.WriteLine($"{s.Imie} {s.Nazwisko} — Oceny: {string.Join(", ", s.Oceny)}");
     }
 
-    // ============================================================
+    // 
     // ZADANIE 8 — Serializacja XML
-    // ============================================================
+    // 
     static void Task8_XmlSerializeStudents()
     {
         List<Student> students = new()
@@ -143,9 +143,9 @@ public class Program
         Console.WriteLine("Zapisano dane studentów do XML (students.xml).");
     }
 
-    // ============================================================
+    // 
     // ZADANIE 9 — Deserializacja XML
-    // ============================================================
+    // 
     static void Task9_XmlDeserializeStudents()
     {
         if (!File.Exists("students.xml"))
@@ -163,9 +163,9 @@ public class Program
             Console.WriteLine($"{s.Imie} {s.Nazwisko} — Oceny: {string.Join(", ", s.Oceny)}");
     }
 
-    // ============================================================
+    // 
     // ZADANIE 10 — Odczyt pliku CSV Iris
-    // ============================================================
+    // 
     static void Task10_ReadIrisCsv()
     {
         if (!File.Exists("iris.csv"))
@@ -178,9 +178,9 @@ public class Program
             Console.WriteLine(line);
     }
 
-    // ============================================================
+    // 
     // ZADANIE 11 — Średnie kolumn numerycznych
-    // ============================================================
+    // 
     static void Task11_IrisColumnAverages()
     {
         if (!File.Exists("iris.csv"))
@@ -206,9 +206,9 @@ public class Program
         }
     }
 
-    // ============================================================
+    // 
     // ZADANIE 12 — Filtrowanie CSV do iris_filtered.csv
-    // ============================================================
+    // 
     static void Task12_FilterIrisCsv()
     {
         if (!File.Exists("iris.csv"))
